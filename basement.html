@@ -1,0 +1,23 @@
+<DOCTYPE! html>
+<html>
+  <head>
+      <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-assets>
+      <audio src="everytimewebasement.mp3"></audio>
+      <img src="leakybunker.jpg" id="basement">
+      <img src="concrete.jpg" id="concrete">
+    </a-assets>
+    <a-scene>
+      <a-plane src="#concrete" rotation="-90 0 0" width="10" height="10"></a-plane>
+
+      <a-box width="10" height="10" depth="10" src="#basement" material="side:double"></a-box>
+      <a-cylinder position="0 4.95 0.5" rotation="90 0 0" scale="0.05 2 0.05" color="#fff"></a-cylinder>
+      <a-light type="directional" position="0 4.95 0.5" intensity="0.30" color="#fff"></a-light>
+      <a-plane src="#concrete" rotation="-90 0 0" width="10" height="10" position="0 4.99 0" material="side:double"></a-plane>
+      <a-sky color="#fff"></a-sky>
+      <a-light type="ambient" color="#919191" intensity="0.20"></a-light>
+    </a-scene>
+  </body>
+</html>
